@@ -53,10 +53,7 @@ int main (void)
 	}
 	printf("%d\n\r",year);
 	a=(year-2020)/4.0;
-	if(a>=0)
-	  goto done1;
-	  
-	done1:
+	if(a>=0){
 	if((year-2020)%4==0)
 	{
 		a=ceil(a);
@@ -140,10 +137,9 @@ int main (void)
     	       break;
 	}
 	
-	if(a<0)
-	goto done2;
-	
-	done2:
+}
+    else{ 
+
 		if((year-2020)%4==0)
 	{
 		a=ceil(a);
@@ -226,6 +222,7 @@ int main (void)
     	case 6:printf("Thursday");
     	       break;
 	}
+}
 	   
 	return 0; 
 	
